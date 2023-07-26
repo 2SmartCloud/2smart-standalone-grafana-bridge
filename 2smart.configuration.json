@@ -1,0 +1,20 @@
+{
+    "title": "Grafana",
+    "type": "grafana-service",
+    "registry": "2smartdev/2smart-standalone-grafana-bridge",
+    "configuration": {
+        "fields": [
+            {
+                "name": "DEVICE_NAME",
+                "type": "string",
+                "label": "Service name",
+                "default": "Grafana"
+            }
+        ],
+        "volumes": {
+            "{BRIDGE}/lib": "/var/lib/grafana"
+        },
+        "exposePort": true
+    },
+    "icon": "favicon.svg"
+}
